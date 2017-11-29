@@ -1,0 +1,27 @@
+<h2>List of places you have been</h2>
+
+<% @list.each do |place| %>
+  <h4><a href="/places_you_have_been/<%= place.id %>"><%= place.city %></a></h4>
+<% end %>
+
+<h4>Add a place to the list:</h4>
+
+<form action="/" method="post">
+  <div class="form-group">
+    <label for="city">City</label>
+    <input id="city" name="city" class="form-control" type="text">
+  </div>
+  <div class="form-group">
+    <label for="country">Country</label>
+    <input id="country" name="country" class="form-control" type="text">
+  </div>
+  <div class="form-group">
+    <label for="year">Year of Visit</label>
+    <input id="year" name="year" class="form-control" type="text">
+  </div>
+  <div class="form-group">
+    <label for="notes">Notes</label>
+    <input id="notes" name="notes" class="form-control" type="text">
+  </div>
+  <button type="submit" class="btn">Go!</button>
+</form>

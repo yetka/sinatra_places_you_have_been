@@ -6,7 +6,7 @@ class Place
   attr_accessor :notes
   attr_reader :id
 
-  def initialize(city,county,year,notes)
+  def initialize(city,country,year,notes)
     @city = city
     @country = country
     @year = year
