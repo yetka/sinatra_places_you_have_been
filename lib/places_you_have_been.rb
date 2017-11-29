@@ -16,4 +16,8 @@ class Place
     @@list
   end
 
+  def save()
+    @@list.push(self)
+  end
+
 end
